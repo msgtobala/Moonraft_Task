@@ -1,0 +1,23 @@
+[
+    {
+       "tag_id":"1",
+       "heading":"Probationary Officer",
+       "type":"basic",
+       "license_availability":"200",
+       "time":50
+    },
+    {
+       "tag_id":"2",
+       "heading":"Probationary Juniors",
+       "type":"Advanced",
+       "license_availability":"100",
+       "time":45
+    },
+    {
+        "tag_id":"3",
+        "heading":"Probationary Officer",
+        "type":"Advanced",
+        "license_availability":"500",
+        "time":40
+     }
+]

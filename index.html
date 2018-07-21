@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Merit Trac</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    
+</head>
+<body>
+    <section class="main_section set_headerwidth">
+        <header class="main_header set_headermaxwidth">
+           <div class="main_div" id = "bar_nav"> 
+              <div class="image_div">
+                  <img src = "/images/page-1.png" alt = "merit-trac"/>
+              </div>
+              <div class="nav_bar">
+                <ul class="nav_lists">
+                    <li class = "nav_list"><a href = "#">ASSESSMENTS</a></li>
+                    <li class = "nav_list"><a href = "#">CATLOGUE</a></li>
+                    <li class = "nav_list"><a href = "#">CANDIDATES</a></li>
+                    <li class = "nav_list"><a href = "#">REPORTS</a></li>
+                </ul>
+              </div>
+              <div class="search_profile">
+                    <img src = "/images/search.png" class = "search_img" alt = "search_image"/>
+                    <img src="/images/profile.png" alt="profile_image" class="profile_img"/>
+              </div>
+           </div>
+           <div class="header_hex">
+               <div class="main_heading">
+                    <img  class = "exlamation_img" src = "/images/exlamation.png" alt = "profile-image"/>
+                    <h1 class = "heading">Let's Get Started</h1>
+                    <p class = "sub_heading">Just a few details</p> 
+               </div>
+           </div>
+        </header>
+    </section>
+    <section class = "set_width bg-color">
+        <main class = "set_maxwidth main_content">
+            <div class="user_form">
+                <div class="maindatory_form">
+                        <i class = "mandatory_title">Mandatory</i>
+                    <div class="assessment">
+                        <p class = "assessment_name">ASSESSMENT NAME</p>
+                        <input type="text" name="#" id="ass_name" class="assessment_holder" placeholder="Assessment Name">
+                    </div>
+                    <div class="pass_criteria">
+                        <p class = "pass_criteria_number">PASS CRITERIA</p>
+                        <span class = "number_arrow"><input max = 100 min = 0 type="number" name="#" id="pass_num" class="pass_number"></span>
+                        <span class = "percent">&#37;</span>
+                    </div>
+
+                    <div class="date">
+                        <div class="start_date">
+                            <p class = "date_form">STARTS</p>
+                            <span class = "calender"><i class="fa fa-calendar"></i></span>
+                            <input class = "date_time" type="datetime" name="#" id="date_start">
+                        </div>
+                        <div class="end_date">
+                            <p class = "date_form">ENDS</p>
+                            <span class = "calender1"><i class="fa fa-calendar"></i></span>
+                            <input class = "date_time1" type="datetime" name="#" id="date_end">
+                        </div>
+                   </div> 
+                </div>
+                
+                <div class="optional_form">
+                    <p class = "optional_name">Optional</p>
+                    <div class="walk_in_test">
+                        <label class="container check_title" style = "padding: 0% 14%">Walk-in Test
+                            <input type="checkbox" checked="checked" class = "agree">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="assessment_rules">    
+                        <label class="container check_title" style = "padding: 0% 14%">Assessment Rules
+                            <input type="checkbox"  class = "agree">
+                            <span class="checkmark"></span>
+                            <i class="fa fa-question-circle question" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                    <div class = "bottom_pass">
+                     <p class = "pass_title">PASS TARGET</p>
+                     <input type="text" name="#" id="no_candidates" class="pass_number">
+                     <label class = "pass_title">Candidates</label>
+                     <input type = "submit" value = "Submit" onclick = "postfunction()" class = "button button_blue"/>
+                    </div>    
+                </div>
+            </div>
+             <div class="catalogue_items">
+                 <div class = "heading_margin">
+                   <!-- <span class="glyphicon glyphicon-book book"></span> -->
+                   <i class="fa fa-book book" aria-hidden="true" style = "font-size:25px;"></i>
+                   <h2 class = "catalogue_heading">Select Catalogue Item</h2>
+                </div>
+                <i class="material-icons add_ico" style = "font-size: 30px;">add_circle_outline</i>
+            </div>
+            <div class="catalogues" id = "template_here">
+                <!-- <div class="catalogue_container">
+                        <div class="image_contain">
+                               <div class="opacity_container">
+                                </div>
+                                <div class = "text_contain">
+                                        <i class = "pb_officer">Probationary officer/Junior</i>
+                                        <span class = "eng_text">ENGINEERING</span>
+                                </div>
+                                <label class="container1 check_title1">
+                                            <input type="checkbox">
+                                            <span class="checkmark1"></span>
+                                </label>      
+                        </div>       
+                               <div class="basic">
+                                    <div class = "badge_div">
+                                            <img class = "badge_timer" src = "/images/level.png" alt = "badge_image"/>
+                                            <p class = "basic_def">Basic</p>
+                                    </div>
+                                     <div class = "mins_div">
+                                            <img class = "badge_timer" src = "/images/time.png" alt = "timer_image"/>
+                                            <p class="timer_def">45 mins</p>
+                                     </div>
+                              </div>
+                              
+                              <div class="availability">
+                                 <span class="loader"></span>
+                                 <span class = "license_title">200 licenses available</span>
+                              </div>
+                        
+                </div>
+                <div class="catalogue_container">
+                        <div class="image_contain">
+                               <div class="opacity_container">
+                                </div>
+                                <div class = "text_contain">
+                                        <i class = "pb_officer">Probationary officer/Junior</i>
+                                        <span class = "eng_text">ENGINEERING</span>
+                                </div>
+                                <label class="container1 check_title1">
+                                            <input type="checkbox">
+                                            <span class="checkmark1"></span>
+                                </label>      
+                        </div>       
+                               <div class="basic">
+                                    <div class = "badge_div">
+                                            <img class = "badge_timer" src = "/images/level.png" alt = "badge_image"/>
+                                            <p class = "basic_def">Basic</p>
+                                    </div>
+                                     <div class = "mins_div">
+                                            <img class = "badge_timer" src = "/images/time.png" alt = "timer_image"/>
+                                            <p class="timer_def">45 mins</p>
+                                     </div>
+                              </div>
+                              
+                              <div class="availability">
+                                 <span class="loader1"></span>
+                                 <span class = "license_title">200 licenses available</span>
+                              </div>
+                        
+                </div>
+                <div class="catalogue_container">
+                        <div class="image_contain">
+                               <div class="opacity_container">
+                                </div>
+                                <div class = "text_contain">
+                                        <i class = "pb_officer">Probationary officer/Junior</i>
+                                        <span class = "eng_text">ENGINEERING</span>
+                                </div>
+                                <label class="container1 check_title1">
+                                            <input type="checkbox">
+                                            <span class="checkmark1"></span>
+                                </label>      
+                        </div>       
+                               <div class="basic">
+                                    <div class = "badge_div">
+                                            <img class = "badge_timer" src = "/images/level.png" alt = "badge_image"/>
+                                            <p class = "basic_def">Basic</p>
+                                    </div>
+                                     <div class = "mins_div">
+                                            <img class = "badge_timer" src = "/images/time.png" alt = "timer_image"/>
+                                            <p class="timer_def">45 mins</p>
+                                     </div>
+                              </div>
+                              
+                              <div class="availability">
+                                 <span class="loader2"></span>
+                                 <span class = "license_title">200 licenses available</span>
+                              </div>
+                        
+                </div> -->
+            </div>
+            <div class="candidates">
+                <div class="prof_candidates">
+                    <i class="fa fa-user user" aria-hidden="true" style = "font-size:30px"></i>
+                    <i class = "cand">Add Candidates</i>
+                </div>
+                <div class="more">
+                    <img src = "/images/group-17.png" alt = "more_image"/>
+                </div>
+            </div>
+            <div class="upload_rectangle">
+                <img src="/images/upload.svg" alt="upload_image" class="upload_image">
+                <span class = "upload_title">Upload Excel</span>
+                <i class = "upload_text">Enter the data in the <u class = "underline">Template</u> and then upload</i>
+            </div><br><br>
+        </main>
+    </section>
+    <section class="footer_width">
+        <div class="footer_maxwidth">
+            <div class="footer">
+                <button class="cancel">CANCEL</button>
+                <button class="cancel">SAVE AS DRAFT</button>
+                 <button class="btn_white">SAVE ASSESSMENT</button> 
+            </div>
+        </footer>
+    </section>
+     <script>
+    //   var header = jQuery(".main_div");
+    //   var headerSCroll = "header_scrolled";
+    //   jQuery().scroll(function(){
+    //       if(jQuery(this).scrollTop() > 0){
+    //           header.addClass(headerSCroll);
+    //       }
+    //   });
+    </script> 
+    <script src = "/js/easyhttp.js"></script>
+    <script src = "/js/app.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/animations.js"></script>
+</body>
+</html>

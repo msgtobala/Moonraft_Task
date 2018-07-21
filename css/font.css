@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Muli';
+    src:url('/assests/fonts/Muli/Muli-Regular.ttf');    
+}
+
+@font-face{
+    font-family: 'Muli-SemiBold';
+    src:url('/assests/fonts/Muli/Muli-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'Muli-Light';
+    src:url('/assests/fonts/Muli/Muli-Light.ttf');
+}
+
+@font-face{
+    font-family: 'Muli-Bold';
+    src:url('/assests/fonts/Muli/Muli-Bold.ttf');
+}
+@font-face{
+    font-family: 'Muli-LightItalic';
+    src:url('/assests/fonts/Muli/Muli-LightItalic.ttf');
+}
+@font-face{
+    font-family: 'Muli-ExtraBold';
+    src:url('/assests/fonts/Muli/Muli-ExtraBold.ttf');
+}
